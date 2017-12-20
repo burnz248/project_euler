@@ -2,7 +2,10 @@ package com.lytwyn.andrew.projecteuler.util;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by andrew on 12/4/2017.
@@ -30,8 +33,11 @@ public class ProblemUtil
                 upper.add(0, (num/i));
             }
         }
-        boolean b = lower.addAll(upper);
-        return lower;
+        
+        Set<Integer> numbers = new TreeSet<>();
+        numbers.addAll(lower);
+        numbers.addAll(upper);
+        return Arrays.asList(numbers.toArray(new Integer[numbers.size()]));
     }
 
     public static List<Long> getDivisors(long num)
