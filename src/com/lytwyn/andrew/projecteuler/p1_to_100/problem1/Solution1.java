@@ -1,4 +1,4 @@
-package com.lytwyn.andrew.projecteuler.problem1;
+package com.lytwyn.andrew.projecteuler.p1_to_100.problem1;
 
 import java.util.Set;
 import java.util.TreeSet;

@@ -1,3 +1,5 @@
+package com.lytwyn.andrew.projecteuler.p1_to_100;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -45,18 +47,28 @@ public class Problem14
 
     private static int getChainSize(int num)
     {
-        List<Integer> chain = new ArrayList<>();
+//        List<Integer> chain = new ArrayList<>();
 
-        chain.add(num);
+//        chain.add(num);
 
-        int currentNum = 0;
+        int size = 1;
+
+        long currentNum = 0;
 
         while(currentNum != 1)
         {
-            currentNum = (num % 2 == 0)? num / 2 : (3 * num) + 1;
-            chain.add(currentNum);
+            if(currentNum != 0)
+            {
+                currentNum =  (currentNum % 2 == 0) ? currentNum / 2 : (3 * currentNum) + 1;
+            } else currentNum =(num % 2 == 0) ? num / 2 : (3 * num) + 1;
+            ++size;
+            if(num == 113383) // this is a big one
+            {
+                System.err.printf("\t\t%d: %d\n", size, currentNum);
+                if(currentNum < 0) System.exit(0);
+            }
         }
-
-        return chain.size();
+        System.out.println(num + ": " + size);
+        return size;
     }
 }

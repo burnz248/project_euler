@@ -1,3 +1,5 @@
+package com.lytwyn.andrew.projecteuler.util;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -86,10 +88,52 @@ public class ProblemUtil
         return true;
     }
 
+    public static boolean isPrime(long l)
+    {
+        for(long i = 2; i < Math.sqrt(l); ++i)
+        {
+            if(l % i == 0) return false;
+        }
+        return true;
+    }
+
     public static boolean isPalindrome(String s)
     {
         StringBuilder s_2 = (new StringBuilder(s)).reverse();
         return s_2.toString().equals(s);
+    }
+
+    public static boolean isEvenlyDivisible(int number, int low, int high)
+    {
+        for(int i = low; i <= high; ++i)
+        {
+            if(number % i != 0) return false;
+        }
+        return true;
+    }
+
+    public static boolean isPythagoreanTriple(int a, int b, int c)
+    {
+        return ((Math.pow(a, 2) + Math.pow(b, 2)) == Math.pow(c, 2));
+    }
+
+    public static BigInteger factorial(BigInteger n)
+    {
+        if(n.equals(BigInteger.ONE)) return BigInteger.ONE;
+        else return n.multiply(factorial(n.subtract(BigInteger.ONE)));
+    }
+
+    public static BigInteger sumDigits(BigInteger n)
+    {
+        BigInteger result = BigInteger.ZERO;
+        String num = n.toString();
+
+        for(int i = 0; i < num.length(); ++i)
+        {
+            result = result.add(new BigInteger("" + num.charAt(i)));
+        }
+
+        return result;
     }
 
 }

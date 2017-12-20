@@ -1,3 +1,5 @@
+package com.lytwyn.andrew.projecteuler.p1_to_100;
+
 /**
  * Largest palindrome product
  * Problem 4

@@ -1,3 +1,5 @@
+package com.lytwyn.andrew.projecteuler.p1_to_100;
+
 import java.util.Calendar;
 import java.util.Date;
 

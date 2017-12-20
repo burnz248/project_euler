@@ -1,3 +1,5 @@
+package com.lytwyn.andrew.projecteuler.p1_to_100;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;

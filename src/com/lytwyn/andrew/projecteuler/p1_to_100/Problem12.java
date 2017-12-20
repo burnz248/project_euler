@@ -1,3 +1,7 @@
+package com.lytwyn.andrew.projecteuler.p1_to_100;
+
+import com.lytwyn.andrew.projecteuler.util.ProblemUtil;
+
 import java.util.*;
 
 /**
