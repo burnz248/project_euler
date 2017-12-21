@@ -10,7 +10,7 @@ public class Problem048
     public static void main(String[] args)
     {
         BigInteger sum = BigInteger.ZERO;
-        for(int i = 1; i <= 1000; ++i)
+        for (int i = 1; i <= 1000; ++i)
         {
             BigInteger power = (new BigInteger("" + i)).pow(i);
             sum = sum.add(power);

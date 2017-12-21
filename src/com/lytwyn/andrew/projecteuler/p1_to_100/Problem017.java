@@ -39,7 +39,7 @@ public class Problem017
     {
         StringBuilder sb = new StringBuilder();
 
-        for(int i = 1; i <= 1000; ++i)
+        for (int i = 1; i <= 1000; ++i)
         {
             System.out.println(getWord(i));
             sb.append(getWord(i));
@@ -50,17 +50,17 @@ public class Problem017
 
     private static String getWord(int num)
     {
-        if(num <= 20) return getOneToTwenty(num, false);
+        if (num <= 20) return getOneToTwenty(num, false);
         StringBuilder result = new StringBuilder();
 
         String s = Integer.toString(num);
 
-        for(int i = 0; i < s.length(); ++i)
+        for (int i = 0; i < s.length(); ++i)
         {
             String current = "";
             int power = s.length() - i;
 
-            switch(power)
+            switch (power)
             {
                 case 4:
                     current = getThousand(num);
@@ -72,10 +72,10 @@ public class Problem017
                     current = getTen(num);
                     break;
                 case 1:
-                    if(s.length() >= 2 && s.charAt(s.length() - 2) != '1')
+                    if (s.length() >= 2 && s.charAt(s.length() - 2) != '1')
                     {
                         int n = Integer.valueOf(s.substring(s.length() - 2));
-                        if(num >= 100 && (n <= 9 && n >= 1)) current += "and";
+                        if (num >= 100 && (n <= 9 && n >= 1)) current += "and";
                         current += getOneToTwenty(num, false);
                     }
                     break;
@@ -99,7 +99,7 @@ public class Problem017
         int hundreds = Integer.valueOf(n.substring(n.length() - 3));
 
         int div = hundreds / 100;
-        if(div != 0)
+        if (div != 0)
         {
             StringBuilder sb = new StringBuilder();
             sb.append(getOneToTwenty(div, false)).append(HUNDRED);
@@ -114,24 +114,32 @@ public class Problem017
         int tens = Integer.valueOf(n.substring(n.length() - 2));
         int div = tens / 10;
 
-        if(div != 0)
+        if (div != 0)
         {
-            if(div == 1)
+            if (div == 1)
             {
                 div = (div * 10) + Integer.valueOf(n.substring(n.length() - 1));
                 return getOneToTwenty(div, true, num);
             } else
             {
-                switch(div)
+                switch (div)
                 {
-                    case 2: return (num > 100)? "and" + TWENTY : TWENTY;
-                    case 3: return (num > 100)?  "and" + THIRTY : THIRTY;
-                    case 4: return (num > 100)?  "and" + FORTY : FORTY;
-                    case 5: return (num > 100)?  "and" + FIFTY : FIFTY;
-                    case 6: return (num > 100)?  "and" + SIXTY : SIXTY;
-                    case 7: return (num > 100)?  "and" + SEVENTY : SEVENTY;
-                    case 8: return (num > 100)?  "and" + EIGHTY : EIGHTY;
-                    case 9: return (num > 100)?  "and" + NINETY : NINETY;
+                    case 2:
+                        return (num > 100) ? "and" + TWENTY : TWENTY;
+                    case 3:
+                        return (num > 100) ? "and" + THIRTY : THIRTY;
+                    case 4:
+                        return (num > 100) ? "and" + FORTY : FORTY;
+                    case 5:
+                        return (num > 100) ? "and" + FIFTY : FIFTY;
+                    case 6:
+                        return (num > 100) ? "and" + SIXTY : SIXTY;
+                    case 7:
+                        return (num > 100) ? "and" + SEVENTY : SEVENTY;
+                    case 8:
+                        return (num > 100) ? "and" + EIGHTY : EIGHTY;
+                    case 9:
+                        return (num > 100) ? "and" + NINETY : NINETY;
                 }
             }
         }
@@ -142,39 +150,79 @@ public class Problem017
     {
         String n = Integer.toString(div);
 
-        int index = (previous || (div <= 20 && div >= 10) )? 2 : 1;
+        int index = (previous || (div <= 20 && div >= 10)) ? 2 : 1;
 
         div = Integer.valueOf(n.substring(n.length() - index));
 
         StringBuilder sb = new StringBuilder();
 
-        if(num.length != 0 && num[0] >= 100)
+        if (num.length != 0 && num[0] >= 100)
         {
             sb.append("and");
         }
-        
-        switch(div)
+
+        switch (div)
         {
-            case 1: sb.append(ONE); break;
-            case 2: sb.append(TWO); break;
-            case 3: sb.append(THREE); break;
-            case 4: sb.append(FOUR); break;
-            case 5: sb.append(FIVE); break;
-            case 6: sb.append(SIX); break;
-            case 7: sb.append(SEVEN); break;
-            case 8: sb.append(EIGHT); break;
-            case 9: sb.append(NINE); break;
-            case 10: sb.append(TEN); break;
-            case 11: sb.append(ELEVEN); break;
-            case 12: sb.append(TWELVE); break;
-            case 13: sb.append(THIRTEEN); break;
-            case 14: sb.append(FOURTEEN); break;
-            case 15: sb.append(FIFTEEN); break;
-            case 16: sb.append(SIXTEEN); break;
-            case 17: sb.append(SEVENTEEN); break;
-            case 18: sb.append(EIGHTEEN); break;
-            case 19: sb.append(NINETEEN); break;
-            case 20: sb.append(TWENTY); break;
+            case 1:
+                sb.append(ONE);
+                break;
+            case 2:
+                sb.append(TWO);
+                break;
+            case 3:
+                sb.append(THREE);
+                break;
+            case 4:
+                sb.append(FOUR);
+                break;
+            case 5:
+                sb.append(FIVE);
+                break;
+            case 6:
+                sb.append(SIX);
+                break;
+            case 7:
+                sb.append(SEVEN);
+                break;
+            case 8:
+                sb.append(EIGHT);
+                break;
+            case 9:
+                sb.append(NINE);
+                break;
+            case 10:
+                sb.append(TEN);
+                break;
+            case 11:
+                sb.append(ELEVEN);
+                break;
+            case 12:
+                sb.append(TWELVE);
+                break;
+            case 13:
+                sb.append(THIRTEEN);
+                break;
+            case 14:
+                sb.append(FOURTEEN);
+                break;
+            case 15:
+                sb.append(FIFTEEN);
+                break;
+            case 16:
+                sb.append(SIXTEEN);
+                break;
+            case 17:
+                sb.append(SEVENTEEN);
+                break;
+            case 18:
+                sb.append(EIGHTEEN);
+                break;
+            case 19:
+                sb.append(NINETEEN);
+                break;
+            case 20:
+                sb.append(TWENTY);
+                break;
         }
 
         return sb.toString();

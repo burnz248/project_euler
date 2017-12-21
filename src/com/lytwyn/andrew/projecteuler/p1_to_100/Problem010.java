@@ -16,9 +16,9 @@ public class Problem010
 
         boolean[] set = ProblemUtil.sieveOfEratosthenes(MAX);
 
-        for(int i = 2; i < set.length; ++i)
+        for (int i = 2; i < set.length; ++i)
         {
-            if(set[i]) sum += i;
+            if (set[i]) sum += i;
         }
         System.out.println(sum);
     }

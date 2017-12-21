@@ -27,7 +27,7 @@ public class Problem099
 
         int maxLineNumber = 0;
 
-        while(input.hasNext())
+        while (input.hasNext())
         {
             String[] info = input.nextLine().split(",");
 
@@ -35,7 +35,7 @@ public class Problem099
 
             BigInteger current = (new BigInteger(info[0])).pow(exponent);
 
-            if(current.compareTo(max) > 0)
+            if (current.compareTo(max) > 0)
             {
                 max = current;
                 maxLineNumber = lineNumber;

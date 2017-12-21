@@ -30,7 +30,7 @@ public class Problem011
     {
         Scanner input = new Scanner(new File("./data/input/problem_11.txt"));
 
-        for(int gridIndex = 0; input.hasNext(); ++gridIndex)
+        for (int gridIndex = 0; input.hasNext(); ++gridIndex)
         {
             grid[gridIndex] = getLineData(input);
         }
@@ -52,16 +52,16 @@ public class Problem011
     {
         int max = 0;
 
-        for(int row = 0; row <= 19; ++row)
+        for (int row = 0; row <= 19; ++row)
         {
-            for(int column = 0; column <= 16; ++column)
+            for (int column = 0; column <= 16; ++column)
             {
                 int tempIndex = column;
                 int product = grid[row][tempIndex]
-                            * grid[row][++tempIndex]
-                            * grid[row][++tempIndex]
-                            * grid[row][++tempIndex];
-                if(product >= max) max = product;
+                        * grid[row][++tempIndex]
+                        * grid[row][++tempIndex]
+                        * grid[row][++tempIndex];
+                if (product >= max) max = product;
             }
         }
 
@@ -72,16 +72,16 @@ public class Problem011
     {
         int max = 0;
 
-        for(int column = 0; column <= 19; ++column)
+        for (int column = 0; column <= 19; ++column)
         {
-            for(int row = 0; row <= 16; ++row)
+            for (int row = 0; row <= 16; ++row)
             {
                 int tempIndex = row;
                 int product = grid[tempIndex][column]
-                            * grid[++tempIndex][column]
-                            * grid[++tempIndex][column]
-                            * grid[++tempIndex][column];
-                if(product >= max) max = product;
+                        * grid[++tempIndex][column]
+                        * grid[++tempIndex][column]
+                        * grid[++tempIndex][column];
+                if (product >= max) max = product;
             }
         }
 
@@ -92,18 +92,18 @@ public class Problem011
     {
         int max = 0;
 
-        for(int row = 0; row <= 16; ++row)
+        for (int row = 0; row <= 16; ++row)
         {
-            for(int column = 0; column <= 16; ++column)
+            for (int column = 0; column <= 16; ++column)
             {
                 int rowIndex = row;
                 int columnIndex = column;
 
                 int product = grid[rowIndex][columnIndex]
-                            * grid[++rowIndex][++columnIndex]
-                            * grid[++rowIndex][++columnIndex]
-                            * grid[++rowIndex][++columnIndex];
-                if(product >= max) max = product;
+                        * grid[++rowIndex][++columnIndex]
+                        * grid[++rowIndex][++columnIndex]
+                        * grid[++rowIndex][++columnIndex];
+                if (product >= max) max = product;
             }
         }
 
@@ -114,18 +114,18 @@ public class Problem011
     {
         int max = 0;
 
-        for(int row = 0; row <= 16; ++row)
+        for (int row = 0; row <= 16; ++row)
         {
-            for(int column = 3; column <= 19; ++column)
+            for (int column = 3; column <= 19; ++column)
             {
                 int rowIndex = row;
                 int columnIndex = column;
 
                 int product = grid[rowIndex][columnIndex]
-                            * grid[++rowIndex][--columnIndex]
-                            * grid[++rowIndex][--columnIndex]
-                            * grid[++rowIndex][--columnIndex];
-                if(product >= max) max = product;
+                        * grid[++rowIndex][--columnIndex]
+                        * grid[++rowIndex][--columnIndex]
+                        * grid[++rowIndex][--columnIndex];
+                if (product >= max) max = product;
             }
         }
 

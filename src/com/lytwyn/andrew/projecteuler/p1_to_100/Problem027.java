@@ -13,12 +13,12 @@ public class Problem027
         int maxA = 0;
         int maxB = 0;
 
-        for(int a = -999; a < 1000; ++a)
+        for (int a = -999; a < 1000; ++a)
         {
-            for(int b = -1000; b <= 1000; ++b)
+            for (int b = -1000; b <= 1000; ++b)
             {
-                int primes = getConsecutivePrimes(a,b);
-                if(primes > maxPrimes)
+                int primes = getConsecutivePrimes(a, b);
+                if (primes > maxPrimes)
                 {
                     maxA = a;
                     maxB = b;
@@ -34,8 +34,9 @@ public class Problem027
     {
         int num = 0;
 
-        for(int n = 0; ProblemUtil.isPrime(Math.abs(evaluate(n, a, b))); ++n, ++num)
-        {}
+        for (int n = 0; ProblemUtil.isPrime(Math.abs(evaluate(n, a, b))); ++n, ++num)
+        {
+        }
 
         return num;
     }

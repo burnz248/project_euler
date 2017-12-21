@@ -14,7 +14,7 @@ public class Problem022
 
         List<String> names = new ArrayList<>();
 
-        while(in.hasNext())
+        while (in.hasNext())
         {
             names.addAll(Arrays.asList(in.nextLine().replaceAll("\"", "").split(",")));
             names.remove("");
@@ -22,7 +22,7 @@ public class Problem022
         Collections.sort(names);
         int sum = 0;
 
-        for(int i = 0; i < names.size(); ++i)
+        for (int i = 0; i < names.size(); ++i)
         {
             String name = names.get(i);
             int nameScore = getNameScore(name);
@@ -36,7 +36,7 @@ public class Problem022
     {
         int score = 0;
 
-        for(int i = 0; i < name.length(); ++i)
+        for (int i = 0; i < name.length(); ++i)
         {
             score += ((int) name.charAt(i)) - 64;
         }

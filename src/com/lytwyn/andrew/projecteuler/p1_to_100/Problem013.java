@@ -13,7 +13,7 @@ public class Problem013
 
         Scanner input = new Scanner(new File("./data/input/problem_13.txt"));
 
-        while(input.hasNext())
+        while (input.hasNext())
         {
             numbers.add(input.nextLine());
         }
@@ -22,11 +22,11 @@ public class Problem013
 
         int carry = 0;
         // i--> character index in string
-        for(int i = 49; i >= 0; --i)
+        for (int i = 49; i >= 0; --i)
         {
             int sum = carry;
 
-            for(String number : numbers)
+            for (String number : numbers)
             {
                 sum += Integer.valueOf("" + number.charAt(i));
             }

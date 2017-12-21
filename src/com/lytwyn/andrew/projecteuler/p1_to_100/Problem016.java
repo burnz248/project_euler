@@ -8,9 +8,9 @@ import com.lytwyn.andrew.projecteuler.util.ProblemUtil;
  * Power digit sum
  * Problem 16
  * 2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
- *
+ * <p>
  * What is the sum of the digits of the number 2^1000?
- *
+ * <p>
  * Thread Post: Wed, 13 Dec 2017, 09:40
  */
 public class Problem016
@@ -20,7 +20,7 @@ public class Problem016
         String big = ProblemUtil.exponent(2, 1000);
         BigInteger sum = BigInteger.ZERO;
 
-        for(int i = 0; i < big.length(); ++i)
+        for (int i = 0; i < big.length(); ++i)
         {
             sum = sum.add(new BigInteger("" + big.charAt(i)));
         }

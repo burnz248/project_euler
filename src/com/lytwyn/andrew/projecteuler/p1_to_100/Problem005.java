@@ -13,8 +13,10 @@ public class Problem005
     {
         int num = 1;
 
-        while(!ProblemUtil.isEvenlyDivisible(num, 1, 20))
-        { ++num; }
+        while (!ProblemUtil.isEvenlyDivisible(num, 1, 20))
+        {
+            ++num;
+        }
 
         System.out.println(num);
     }

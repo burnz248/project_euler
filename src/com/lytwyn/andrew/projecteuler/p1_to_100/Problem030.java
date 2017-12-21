@@ -8,16 +8,16 @@ public class Problem030
     public static void main(String[] args)
     {
         int sum = 0;
-        for(int i = 2; i < 10000000; ++i)
+        for (int i = 2; i < 10000000; ++i)
         {
             String current = Integer.toString(i);
             int currentSum = 0;
 
-            for(int j = 0; j < current.length(); ++j)
+            for (int j = 0; j < current.length(); ++j)
             {
                 currentSum += (int) Math.pow(Integer.valueOf("" + current.charAt(j)), 5);
             }
-            if(currentSum == i)
+            if (currentSum == i)
             {
                 System.out.println(i);
                 sum += i;
