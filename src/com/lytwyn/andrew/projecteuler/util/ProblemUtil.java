@@ -1,11 +1,7 @@
 package com.lytwyn.andrew.projecteuler.util;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * Created by andrew on 12/4/2017.
@@ -103,6 +99,16 @@ public class ProblemUtil
         return true;
     }
 
+    public static boolean isPrime(BigInteger i)
+    {
+        for(BigInteger b = new BigInteger("2"); b.compareTo(i) < 0; b = b.add(BigInteger.ONE))
+        {
+            if(i.mod(b).equals(BigInteger.ZERO)) return false;
+        }
+
+        return true;
+    }
+
     public static boolean isPalindrome(String s)
     {
         StringBuilder s_2 = (new StringBuilder(s)).reverse();
@@ -140,6 +146,87 @@ public class ProblemUtil
         }
 
         return result;
+    }
+
+    public static List<BigInteger> getAllPandigitalNumbers(boolean startWithZero)
+    {
+        List<BigInteger> permutations = new ArrayList<>();
+        for (int a = 0; a <= 9; ++a)
+        {
+            List<Integer> possibleValues = new ArrayList<>();
+
+            for (int i = 0; i <= 9; ++i)
+            {
+                possibleValues.add(i);
+            }
+            if(a == 0)
+            {
+                if (!startWithZero)
+                {
+                    a = 1;
+                }
+            }
+            possibleValues.remove(a);
+
+            for (int b = 0; b < possibleValues.size(); ++b)
+            {
+                int currentB = possibleValues.remove(b);
+
+                for (int c = 0; c < possibleValues.size(); ++c)
+                {
+                    int currentC = possibleValues.remove(c);
+
+                    for (int d = 0; d < possibleValues.size(); ++d)
+                    {
+                        int currentD = possibleValues.remove(d);
+                        for (int e = 0; e < possibleValues.size(); ++e)
+                        {
+                            int currentE = possibleValues.remove(e);
+                            for (int f = 0; f < possibleValues.size(); ++f)
+                            {
+                                int currentF = possibleValues.remove(f);
+                                for (int g = 0; g < possibleValues.size(); ++g)
+                                {
+                                    int currentG = possibleValues.remove(g);
+                                    for (int h = 0; h < possibleValues.size(); ++h)
+                                    {
+                                        int currentH = possibleValues.remove(h);
+                                        for (int i = 0; i < possibleValues.size(); ++i)
+                                        {
+                                            int currentI = possibleValues.remove(i);
+                                            for (int j = 0; j < possibleValues.size(); ++j)
+                                            {
+                                                int currentJ = possibleValues.remove(j);
+
+                                                String out = String.format("%d%d%d%d%d%d%d%d%d%d", a
+                                                        , currentB, currentC, currentD, currentE
+                                                        , currentF, currentG, currentH, currentI
+                                                        , currentJ);
+                                                permutations.add(new BigInteger(out));
+
+                                                possibleValues.add(j, currentJ);
+                                            }
+                                            possibleValues.add(i, currentI);
+                                        }
+                                        possibleValues.add(h, currentH);
+                                    }
+                                    possibleValues.add(g, currentG);
+                                }
+                                possibleValues.add(f, currentF);
+                            }
+                            possibleValues.add(e, currentE);
+                        }
+                        possibleValues.add(d, currentD);
+                    }
+
+                    possibleValues.add(c, currentC);
+                }
+
+                possibleValues.add(b, currentB);
+            }
+        }
+        Collections.sort(permutations);
+        return permutations;
     }
 
 }
