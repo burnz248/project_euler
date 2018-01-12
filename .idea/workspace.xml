@@ -2,46 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb860840-bcca-4f2f-ab8f-5fa1fff6b8db" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/CHANGELOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/COPYING" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/jquery.sunlight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.6502asm-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.actionscript-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.bash-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.batch-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.brainfuck-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.cpp-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.csharp-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.css-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.diff-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.erlang-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.haskell-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.httpd-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.java-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.javascript-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.lisp-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.lua-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.mysql-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.nginx-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.objective-c-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.perl-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.php-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.powershell-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.python-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.ruby-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.scala-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.sln-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.tsql-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.vb-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/lang/sunlight.xml-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/plugins/sunlight-plugin.doclinks-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/plugins/sunlight-plugin.linenumbers-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/plugins/sunlight-plugin.menu-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/sunlight-all-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/sunlight-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/themes/sunlight.dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/scripts/sunlight/themes/sunlight.default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
     </list>
@@ -96,7 +56,7 @@
       <file leaf-file-name="Problem216.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lytwyn/andrew/projecteuler/p201_to_p300/Problem216.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
+            <state relative-caret-position="561">
               <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,8 +68,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="289">
+              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -293,8 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -405,27 +363,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectEuler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectEuler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -818,7 +760,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30916846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31236672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49434572" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -936,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,17 +938,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/src/com/lytwyn/andrew/projecteuler/p201_to_p300/Problem216.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
+        <state relative-caret-position="561">
           <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1044,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        <state relative-caret-position="289">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding />
         </state>
       </provider>
